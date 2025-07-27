@@ -20,9 +20,9 @@ import { useForm } from "react-hook-form";
 import Link from "next/link";
 import { useState } from "react";
 import { authClient } from "@/lib/auth-client";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { FaGithub, FaGoogle } from "react-icons/fa";
+import SideBanner from "@/components/side-banner";
 
 const formSchema = z.object({
   email: z.string().email(),
@@ -184,11 +184,7 @@ export const SignInView = () => {
               </div>
             </form>
           </Form>
-
-          <div className="bg-radial from-green-700 to-green-900 relative hidden md:flex flex-col gap-y-4 items-center justify-center">
-            <Image src="/logo.svg" alt="Image" width={92} height={92} />
-            <p className="text-2xl font-semibold text-white">Meet.AI</p>
-          </div>
+          <SideBanner />
         </CardContent>
       </Card>
 
