@@ -110,11 +110,11 @@ const DashboardSidebar = () => {
               ))}
             </SidebarMenu>
           </SidebarGroupContent>
-          <SidebarFooter className="text-white">
-            <DashboardUserButton />
-          </SidebarFooter>
         </SidebarGroup>
       </SidebarContent>
+      <SidebarFooter className="text-white">
+        <DashboardUserButton />
+      </SidebarFooter>
     </Sidebar>
   );
 };
